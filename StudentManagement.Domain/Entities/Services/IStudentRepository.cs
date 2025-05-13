@@ -9,8 +9,8 @@ namespace StudentManagement.Core.Students
 {
     public interface IStudentRepository
     {
-        Task<Student> GetById(int id);
-        Task<List<Student>> GetAll(); 
+        Task<Student?> GetById(int id);
+        Task<IEnumerable<Student>> GetAll(); 
         Task Create(Student student);
         Task Update(string firstName,string lastName , double average,Fields field );
         Task Delete(int id);

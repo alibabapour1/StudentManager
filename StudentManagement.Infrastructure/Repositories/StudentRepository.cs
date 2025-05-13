@@ -10,28 +10,28 @@ namespace StudentManagement.Infrastructure.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        public void Create(Student student)
-        {
-            throw new NotImplementedException();
 
-        }
-
-        public void Delete(int id)
+        public Task Update(string firstName, string lastName, double average, Fields field)
         {
             throw new NotImplementedException();
         }
 
-        public List<Student> GetAll()
+        Task IStudentRepository.Create(Student student)
         {
             throw new NotImplementedException();
         }
 
-        public Student GetById(int id)
+        Task IStudentRepository.Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Student student)
+        Task<IEnumerable<Student>> IStudentRepository.GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Student?> IStudentRepository.GetById(int id)
         {
             throw new NotImplementedException();
         }
