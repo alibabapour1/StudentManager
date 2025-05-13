@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Domain", "StudentManagement.Domain\StudentManagement.Domain.csproj", "{E904732A-3C80-49C3-999F-90A54DCA135A}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Core", "StudentManagement.Core\StudentManagement.Core.csproj", "{C59D143C-7408-43E7-B51C-D777FF414435}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Infrastructure", "StudentManagement.Infrastructure\StudentManagement.Infrastructure.csproj", "{80BF5376-4A5A-49A8-B509-7EECBE84E581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Application", "StudentManagement.Application\StudentManagement.Application.csproj", "{EF6CA662-570C-40E8-A993-212A262C1D5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{80BF5376-4A5A-49A8-B509-7EECBE84E581}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80BF5376-4A5A-49A8-B509-7EECBE84E581}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80BF5376-4A5A-49A8-B509-7EECBE84E581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 		{E904732A-3C80-49C3-999F-90A54DCA135A} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 		{C59D143C-7408-43E7-B51C-D777FF414435} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 		{80BF5376-4A5A-49A8-B509-7EECBE84E581} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
+		{EF6CA662-570C-40E8-A993-212A262C1D5C} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 	EndGlobalSection
 EndGlobal
