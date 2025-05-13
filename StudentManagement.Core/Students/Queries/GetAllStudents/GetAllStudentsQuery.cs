@@ -1,4 +1,5 @@
 ﻿using StudentManagement.Core.Abstractions.Mediator;
+using StudentManagement.Core.Students.Queries.GetById;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,6 @@
-﻿public class StudentDto
+﻿namespace StudentManagement.Core.Students.Queries.GetById
+{
+    public class StudentDto
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

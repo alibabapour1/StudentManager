@@ -1,4 +1,5 @@
 ﻿using StudentManagement.Core.Abstractions.Mediator;
+using StudentManagement.Core.Students.Queries.GetById;
 using StudentManagement.Domain.Abstractions;
 using StudentManagement.Domain.Entities;
 using System.Threading;
