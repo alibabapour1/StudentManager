@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement.Core.Students.Commands.Create
 {
-    public class CreateStudentCommandHandler : ICommandHandler<CreateStrudentCommand, string>
+    public class CreateStudentCommandHandler : ICommandHandler<CreateStudentCommand, string>
     {
         private readonly IStudentRepository _studentRepository;
 
@@ -18,7 +18,7 @@ namespace StudentManagement.Core.Students.Commands.Create
             _studentRepository = studentRepository;
         }
 
-        public async Task<Result<string>> Handle(CreateStrudentCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
         {
             if (request == null)
                 return Result.Failure<string>(Error.NullValue);

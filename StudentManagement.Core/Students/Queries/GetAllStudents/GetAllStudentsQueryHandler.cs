@@ -24,10 +24,11 @@ namespace StudentManagement.Core.Students.Queries
             var students = await _studentRepository.GetAll();
 
             if (students == null || !students.Any())
-                return Result.Failure<List<StudentDto>>(StudentErrors.NotFound);
+                return new List<StudentDto>() { };
 
             var dtoList = students.Select(student => new StudentDto
             {
+                Id = student.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Average = student.Average,

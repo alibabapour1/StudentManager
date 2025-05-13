@@ -1,39 +1,46 @@
-﻿using StudentManagement.Core.Students;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentManagement.Core.Students;
 using StudentManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using StudentManagement.Infrastructure.Context;
 
-namespace StudentManagement.Infrastructure.Repositories
+public class StudentRepository : IStudentRepository
 {
-    public class StudentRepository : IStudentRepository
+    private readonly AppDbContext _context;
+
+    public StudentRepository(AppDbContext context)
     {
+        _context = context;
+    }
 
-        public Task Update(string firstName, string lastName, double average, Fields field)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task Create(Student student)
+    {
+        await _context.Students.AddAsync(student);
+        await _context.SaveChangesAsync();
+    }
 
-        Task IStudentRepository.Create(Student student)
+    public async Task Delete(int id)
+    {
+        var student = await _context.Students.FindAsync(id);
+        if (student != null)
         {
-            throw new NotImplementedException();
+            _context.Students.Remove(student);
+            await _context.SaveChangesAsync();
         }
+    }
 
-        Task IStudentRepository.Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<IEnumerable<Student>> GetAll()
+    {
+        return await _context.Students.ToListAsync();
+    }
 
-        Task<IEnumerable<Student>> IStudentRepository.GetAll()
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<Student?> GetById(int id)
+    {
+        return await _context.Students.FindAsync(id);
+    }
 
-        Task<Student?> IStudentRepository.GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task Update(Student updatedStudent)
+    {
+        _context.Students.Update(updatedStudent);
+        await _context.SaveChangesAsync();
     }
 }

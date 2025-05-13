@@ -18,6 +18,8 @@
             Field = fields;
         }
 
+        public Student() { }
+
         public static Student Create(string firstName, string lastName, double average, Fields fields)
         {
             if (firstName == null || lastName == null)

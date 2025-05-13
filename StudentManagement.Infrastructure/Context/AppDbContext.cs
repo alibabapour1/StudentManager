@@ -3,7 +3,7 @@ using StudentManagement.Domain.Entities;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace StudentManagement.Infrastructure.Persistence
+namespace StudentManagement.Infrastructure.Context
 {
     public class AppDbContext : DbContext
     {

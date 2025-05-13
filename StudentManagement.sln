@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Application", "StudentManagement.Application\StudentManagement.Application.csproj", "{EF6CA662-570C-40E8-A993-212A262C1D5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Host", "StudentManagement.Host\StudentManagement.Host.csproj", "{297E4255-443B-478D-B575-260E7ED67E2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF6CA662-570C-40E8-A993-212A262C1D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297E4255-443B-478D-B575-260E7ED67E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297E4255-443B-478D-B575-260E7ED67E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297E4255-443B-478D-B575-260E7ED67E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297E4255-443B-478D-B575-260E7ED67E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{C59D143C-7408-43E7-B51C-D777FF414435} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 		{80BF5376-4A5A-49A8-B509-7EECBE84E581} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 		{EF6CA662-570C-40E8-A993-212A262C1D5C} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
+		{297E4255-443B-478D-B575-260E7ED67E2A} = {54E3DF8C-4AFF-4968-94F5-2E9DD9F15EF2}
 	EndGlobalSection
 EndGlobal

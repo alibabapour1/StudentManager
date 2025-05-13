@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace StudentManagement.Core.Students.Commands
 {
-    public record UpdateStrudentCommand(int Id,string FirstName , string LastName, double Average, Fields Field ) :ICommand<string> ;
+    public record UpdateStudentCommand(int Id,string FirstName , string LastName, double Average, Fields Field ) :ICommand<string> ;
 }

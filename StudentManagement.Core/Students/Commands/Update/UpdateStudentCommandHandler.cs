@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement.Core.Students.Commands
 {
-    public class UpdateStudentCommandHandler : ICommandHandler<UpdateStrudentCommand, string>
+    public class UpdateStudentCommandHandler : ICommandHandler<UpdateStudentCommand, string>
     {
         private readonly IStudentRepository _studentRepository;
 
@@ -18,7 +18,7 @@ namespace StudentManagement.Core.Students.Commands
             _studentRepository = studentRepository;
         }
 
-        public async Task<Result<string>> Handle(UpdateStrudentCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
         {
             if (request == null)
                 return Result.Failure<string>(Error.NullValue);
@@ -39,8 +39,13 @@ namespace StudentManagement.Core.Students.Commands
                 return Result.Failure<string>(StudentErrors.NotFound);
 
             }
+            existingStudent.FirstName = request.FirstName;
+            existingStudent.LastName = request.LastName;
+            existingStudent.Average  = request.Average;
+            existingStudent.Field = request.Field;
+
             
-            await _studentRepository.Update(request.FirstName,request.LastName,request.Average,request.Field);
+            await _studentRepository.Update(existingStudent);
             return "Student Updated Sucessfully";
             
 

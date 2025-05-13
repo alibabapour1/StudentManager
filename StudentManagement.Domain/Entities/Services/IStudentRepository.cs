@@ -12,7 +12,7 @@ namespace StudentManagement.Core.Students
         Task<Student?> GetById(int id);
         Task<IEnumerable<Student>> GetAll(); 
         Task Create(Student student);
-        Task Update(string firstName,string lastName , double average,Fields field );
+        Task Update(Student student );
         Task Delete(int id);
 
     }

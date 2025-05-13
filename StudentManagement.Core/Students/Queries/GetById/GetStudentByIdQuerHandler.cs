@@ -28,6 +28,7 @@ namespace StudentManagement.Core.Students.Queries
 
             var dto = new StudentDto
             {
+                Id = request.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Average = student.Average,
